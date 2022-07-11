@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Jeonghoon Park</title>
+    <title>Deep Edge-Aware Interactive Colorization against Color Bleeding Effects | Jeonghoon Park</title>
 
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="My Blog">
+<meta name="description" content="ICCV 2021 (Oral) 🎉 🔗Eungyeup Kim*, Sanghyeon Lee*, Jeonghoon Park*, Somi choi, Choonghyun Seo, Jaegul Choo 🔗 Abstract 🔗Deep image colorization networks often suffer from the color-bleeding artifact, a problematic color spreading near the boundaries between adjacent objects. The color-bleeding artifacts debase the reality of generated outputs, limiting the applicability of colorization models on a practical application. Although previous approaches have tackled this problem in an automatic manner, they often generate imperfect outputs because their enhancements are available only in limited cases, such as having a high contrast of gray-scale value in an input image.">
 <meta name="generator" content="Hugo 0.100.2" />
 
 
@@ -66,46 +66,79 @@ if (!doNotTrack) {
     <main class="main">
       
 
-<div id="page-404">
-  <div class="text">
-      
-          <h1>404 - Page Not Found</h1>
-      
+<section id="single">
+    <h1 class="title">Deep Edge-Aware Interactive Colorization against Color Bleeding Effects</h1>
 
-      
-          <div>The content you&#39;re looking for doesn&#39;t seem to exist.</div>
-      
+    <div class="tip">
+        <time datetime="2021-11-13 16:00:04 &#43;0900 KST">Nov 13, 2021</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          180 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          1 minute read
+        </span>
     </div>
 
-  
-      <h2 class="read-more">Read more</h2> 
-  
-
-  
+    
+    
 
 
+    <div class="content">
+      <h2 id="center-iccv-2021-oral-center"><center> ICCV 2021 (Oral) 🎉</center> <a href="#center-iccv-2021-oral-center" class="anchor">🔗</a></h2><h3 id="centereungyeup-kim-sanghyeon-lee-span-stylecolor-6693f5jeonghoon-parkspan-somi-choi-choonghyun-seo-jaegul-choocenter"><center>Eungyeup Kim*, Sanghyeon Lee*, <span style="color: #6693F5">Jeonghoon Park*</span>, Somi choi, Choonghyun Seo, Jaegul Choo</center> <a href="#centereungyeup-kim-sanghyeon-lee-span-stylecolor-6693f5jeonghoon-parkspan-somi-choi-choonghyun-seo-jaegul-choocenter" class="anchor">🔗</a></h3><hr>
+<h2 id="abstract">Abstract <a href="#abstract" class="anchor">🔗</a></h2><p>Deep image colorization networks often suffer from the color-bleeding artifact, a problematic color spreading near the boundaries between adjacent objects. The color-bleeding artifacts debase the reality of generated outputs, limiting the applicability of colorization models on a practical application. Although previous approaches have tackled this problem in an automatic manner, they often generate imperfect outputs because their enhancements are available only in limited cases, such as having a high contrast of gray-scale value in an input image. Instead, leveraging user interactions would be a promising approach, since it can help the edge correction in the desired regions. In this paper, we propose a novel edge-enhancing framework for the regions of interest, by utilizing user scribbles that indicate where to enhance. Our method requires minimal user effort to obtain satisfactory enhancements. Experimental results on various datasets demonstrate that our interactive approach has outstanding performance in improving color-bleeding artifacts against the existing baselines.</p>
+<hr>
+<h2 id="method-overview">Method Overview <a href="#method-overview" class="anchor">🔗</a></h2><p><p class="markdown-image">
+  <img src="https://eungyeupkim.github.io/edge-enhancing-colorization/figs/method_overview.png" alt="Responsive image"  />
+</p></p>
+<hr>
+<h2 id="qualitative-results">Qualitative Results <a href="#qualitative-results" class="anchor">🔗</a></h2><p><p class="markdown-image">
+  <img src="https://eungyeupkim.github.io/edge-enhancing-colorization/figs/zhang_project.png" alt="Responsive image"  />
+</p></p>
+<p><p class="markdown-image">
+  <img src="https://eungyeupkim.github.io/edge-enhancing-colorization/figs/su_project.png" alt="Responsive image"  />
+</p></p>
+<hr>
+<h2 id="links">Links <a href="#links" class="anchor">🔗</a></h2><p>📍 <a href="https://arxiv.org/abs/2107.01619" target="_blank" rel="noopener">ArXiv</a></p>
+<p>📍<a href="https://eungyeupkim.github.io/edge-enhancing-colorization/" target="_blank" rel="noopener">Project Page</a></p>
+
+    </div>
+
     
     
     
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/post/deepedge/'>Deep Edge-Aware Interactive Colorization against Color Bleeding Effects</a></h1>   
-            <div class="date">Nov 13, 2021</div>
-          </div>
-        </section>
+  <div id="comment">
     
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/post/ood_ssl/'>Evaluation of Out-of-Distribution Detection Performance of Self-Supervised Learning in a Controllable Environment</a></h1>   
-            <div class="date">Nov 13, 2020</div>
-          </div>
-        </section>
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
     
-</div>
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "your-disqus-shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+
+</section>
+
 
     </main>
     
