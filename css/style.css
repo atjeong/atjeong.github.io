@@ -256,8 +256,8 @@ nav.navigation a.button {
 
 .profile .avatar {
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
