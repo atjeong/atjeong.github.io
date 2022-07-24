@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Jeonghoon Park</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Nov 2021 16:00:04 +0900</lastBuildDate><atom:link href="https://atjeong.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jul 2022 16:43:25 +0900</lastBuildDate><atom:link href="https://atjeong.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BiasEnsemble: Revisiting the Importance of Amplifying Bias for Debiasing</title>
+      <link>https://atjeong.github.io/post/bias_ensemble/</link>
+      <pubDate>Mon, 11 Jul 2022 16:43:25 +0900</pubDate>
+      
+      <guid>https://atjeong.github.io/post/bias_ensemble/</guid>
+      <description>Jungsoo Lee*, Jeonghoon Park*, Daeyoung Kim*, Junyoung Lee, Edward Choi, Jaegul Choo 🔗 Abstract 🔗In image classification, &amp;ldquo;debiasing&amp;rdquo; aims to train a classifier to be less susceptible to dataset bias, the strong correlation between peripheral attributes of data samples and a target class. For example, even if the frog class in the dataset mainly consists of frog images with a swamp background (i.e., bias-aligned samples), a debiased classifier should be able to correctly classify a frog at a beach (i.</description>
+    </item>
+    
     <item>
       <title>Deep Edge-Aware Interactive Colorization against Color Bleeding Effects</title>
       <link>https://atjeong.github.io/post/deepedge/</link>

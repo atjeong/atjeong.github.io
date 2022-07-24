@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>BiasEnsemble: Revisiting the Importance of Amplifying Bias for Debiasing | Jeonghoon Park</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Jungsoo Lee*, Jeonghoon Park*, Daeyoung Kim*, Junyoung Lee, Edward Choi, Jaegul Choo 🔗 Abstract 🔗In image classification, &ldquo;debiasing&rdquo; aims to train a classifier to be less susceptible to dataset bias, the strong correlation between peripheral attributes of data samples and a target class. For example, even if the frog class in the dataset mainly consists of frog images with a swamp background (i.e., bias-aligned samples), a debiased classifier should be able to correctly classify a frog at a beach (i.">
+<meta name="generator" content="Hugo 0.100.2" />
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+ 
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'your-google-analytics-id', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	<a href="/posts">Archive</a>
+	<a href="/tags">Tags</a>
+	<a href="/about">About</a>
+
+	
+
+	
+	  <a class="button" href="https://atjeong.github.io/index.xml">Subscribe</a>
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">BiasEnsemble: Revisiting the Importance of Amplifying Bias for Debiasing</h1>
+
+    <div class="tip">
+        <time datetime="2022-07-11 16:43:25 &#43;0900 KST">Jul 11, 2022</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          265 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          2 minute read
+        </span>
+    </div>
+
+    
+    
+
+
+    <div class="content">
+      <h3 id="centerjungsoo-lee-span-stylecolor-6693f5jeonghoon-parkspan-daeyoung-kim-junyoung-lee-edward-choi-jaegul-choocenter"><center>Jungsoo Lee*, <span style="color: #6693F5">Jeonghoon Park*</span>, Daeyoung Kim*, Junyoung Lee, Edward Choi, Jaegul Choo</center> <a href="#centerjungsoo-lee-span-stylecolor-6693f5jeonghoon-parkspan-daeyoung-kim-junyoung-lee-edward-choi-jaegul-choocenter" class="anchor">🔗</a></h3><hr>
+<h2 id="abstract">Abstract <a href="#abstract" class="anchor">🔗</a></h2><p>In image classification, &ldquo;debiasing&rdquo; aims to train a classifier to be less susceptible to dataset bias, the strong correlation between peripheral attributes of data samples and a target class. For example, even if the frog class in the dataset mainly consists of frog images with a swamp background (i.e., bias-aligned samples), a debiased classifier should be able to correctly classify a frog at a beach (i.e., bias-conflicting samples). Recent debiasing approaches commonly use two components for debiasing, a biased model $f_B$ and a debiased model $f_D$. $f_B$ is trained to focus on bias-aligned samples while $f_D$ is mainly trained with bias-conflicting samples by concentrating on samples which $f_B$ fails to learn, leading $f_D$ to be less susceptible to the dataset bias. While the state-of-the-art debiasing techniques have aimed to better train $f_D$, we focus on training $f_B$, an overlooked component until now. Our empirical analysis reveals that removing the bias-conflicting samples from the training set for $f_B$ is important for improving the debiasing performance of $f_D$. This is due to the fact that the bias-conflicting samples work as noisy samples for amplifying the bias for $f_B$. To this end, we propose a novel biased sample selection method BiasEnsemble which removes the bias-conflicting samples via leveraging additional biased models to construct a bias-amplified dataset for training $f_B$. Our simple yet effective approach can be directly applied to existing reweighting-based debiasing approaches, obtaining consistent performance boost and achieving the state-of-the-art performance on both synthetic and real-world datasets.</p>
+<hr>
+<h2 id="method-overview">Method Overview <a href="#method-overview" class="anchor">🔗</a></h2><p><p class="markdown-image">
+  <img src="/images/BE_overview.pdf" alt="image-20220711170219161"  />
+</p></p>
+<hr>
+<h2 id="links">Links <a href="#links" class="anchor">🔗</a></h2><p>📍 <a href="https://arxiv.org/abs/2205.14594" target="_blank" rel="noopener">ArXiv</a></p>
+
+    </div>
+
+    
+    
+    
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+
+    <div class="copyright">
+    
+        © Copyright 2021 Jeonghoon
+    
+    </div>
+
+    
+</footer>
+
+
+
+  </body>
+</html>
