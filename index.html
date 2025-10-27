@@ -24,6 +24,9 @@
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap"> -->
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap"> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i&display=swap">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="/css/academic.css">
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Jeonghoon Park">
   <link rel="manifest" href="/index.webmanifest">
@@ -164,8 +167,9 @@
       
       <td>
       <br>
-      <a href="cv/cv_latest.pdf" style="color:#b509ac"><b>CV</b></a>
-        | <a href="https://scholar.google.com/citations?user=f0FspZwAAAAJ&hl=en" style="color:#b509ac"><b>Google Scholar</b></a>
+      <!-- <a href="cv/cv_latest.pdf" style="color:#b509ac"><b>CV</b></a>
+        |  -->
+        <a href="https://scholar.google.com/citations?user=f0FspZwAAAAJ&hl=en" style="color:#b509ac"><b>Google Scholar</b></a>
         | <a href="https://www.linkedin.com/in/jeonghoon-park-10287025b/" style="color:#b509ac"><b>LinkedIn</b></a>
 <!--         | <a href="https://github.com/mcahny"><b>Github</b></a> -->
       <br>
@@ -200,7 +204,7 @@
 <p>I am a Ph.D candidate at Korea Advanced Institute of Science and Technology (KAIST) advised by Professor <a href="https://sites.google.com/site/jaegulchoo/" style="color:#b509ac">Jaegul Choo</a>.</p>
 
 <p>
-  My research focuses on <font color="#b509ac">responsible and reliable AI</font>, with a particular emphasis on bias mitigation. I have explored debiasing tasks in classification models and recently expanded my interests to address societal bias in models trained with large-scale datasets, especially diffusion-based text-to-image (T2I) generative models.
+  My research focuses on <font color="#b509ac">trustworthy AI</font>, with a particular emphasis on debiasing, fairness, and safety. I have explored debiasing tasks in classification models and recently expanded my interests to address societal bias and safety in models trained with large-scale datasets, especially diffusion-based text-to-image models and multi-modal LLMs.
 </p>
 
     <div class="row">
@@ -235,6 +239,15 @@
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
+              <p class="course">Ph.D in Artifical Intelligence, 2022-present</p>
+              <p class="institution">KAIST, Korea</p>
+              <p class="institution">Advisor: Prof. Jaegul Choo</p>
+            </div>
+          </li>
+
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
               <p class="course">M.S in Artifical Intelligence, 2020-2022</p>
               <p class="institution">KAIST, Korea</p>
               <p class="institution">Advisor: Prof. Jaegul Choo</p>
@@ -258,17 +271,18 @@
   </section>
 
 
-<section id="experience" class="home-section wg-blank   " style="padding: 10px 0 10px 0;" >
+
+<section id="experience" class="home-section wg-blank   " style="padding: 10px 0 10px 0; background-color: rgb(249, 249, 249);" >
 <div class="container">
 
 <div class="row">
     <div class="col-lg-10">
-    <h1>Professional Experiences</h1>
+    <h1>Experience</h1>
       <!-- <h3 id="experience">Research Experiences</h3> -->
 <ul>
                               
 <li> 
-  <div style="float:left"><b>Research Internship at Kakao Enterprise</b></div> <div style="float:right"><i>Aug 2022 - Nov 2022</i> </div> <br>                                                                  
+  <div style="float:left"><b>Research Internship at Kakao Enterprise</b></div> <div style="float:right"><i>Aug. 2022 - Nov. 2022</i> </div> <br>                                                                  
     Conducted research on debiasing classification models</a>
 </li>
 
@@ -282,15 +296,33 @@
 </section>
 
 
+
+
+
 <section id="Publications" class="home-section wg-papers" style="padding: 20px 0 20px 0;" >
 <div class="container">
       
 <div class="row">
     <div class="col-lg-10">
-      <h1>Publications & Research Works</h1>
+      <h1>Publications</h1>
     </div>
     <div class="row">
         <ul class="ul-papers">
+
+        <li>
+          <div class="img">
+            <img src="/papers/images/efa_teaser.png" class="img-responsive" alt="" >
+          </div>
+
+          <div class="description">
+            <p><b>Fair Generation without Unfair Distortions: Debiasing Text-to-Image Generation with Entanglement-Free Attention</b></p>
+            <p class="authors"><font color="#b509ac">Jeonghoon Park*</font>, Juyoung Lee*, Chaeyeon Chung, Jaeseong Lee, Jaegul Choo, Jindong Gu</p>
+            <p class="authors"><i>International Conference on Computer Vision</i> (<b>ICCV</b>), 2025</p>
+            <p class="resources">
+                <a href=https://openaccess.thecvf.com/content/ICCV2025/papers/Park_Fair_Generation_without_Unfair_Distortions_Debiasing_Text-to-Image_Generation_with_Entanglement-Free_ICCV_2025_paper.pdf style="color:#b509ac"><b>Paper</b></a>
+            </p>
+          </div>
+        </li>
 
         <li>
           <div class="img">
@@ -301,6 +333,9 @@
             <p><b>Disentangling Subject-Irrelevant Elements against Subject in Personalized Text-to-Image Diffusion via Filtered Self-distillation</b></p>
             <p class="authors">Seunghwan Choi, Jooyeol Yun, <font color="#b509ac">Jeonghoon Park</font>, and Jaegul Choo</p>
             <p class="authors"><i>Winter Conference on Applications of Computer Vision</i> (<b>WACV</b>), 2025</p>
+            <p class="resources">
+                <a href=https://openaccess.thecvf.com/content/WACV2025/papers/Choi_Disentangling_Subject-Irrelevant_Elements_in_Personalized_Text-to-Image_Diffusion_via_Filtered_Self-Distillation_WACV_2025_paper.pdf style="color:#b509ac"><b>Paper</b></a>
+            </p>
           </div>
         </li>
           
@@ -398,6 +433,8 @@
         </li>
         
 </section>
+
+
           
 
 <!-- <section id="Awards" class="home-section wg-blank" style="padding: 20px 0 20px 0;" >
